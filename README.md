@@ -12,8 +12,11 @@ Arrays store a linear arrangement of values, accessed by a single index. Two-dim
 Crosswords are a type of puzzle where the "pieces" of the puzzle have letters in common. For example, these pieces share the letter 'o'.
 
       d
+      
 a c r o s s
+
       w 
+      
       n
 
 The program will accept a list of words into an array list of strings, then make a 20 x 20 matrix of characters (strings of length 1) that contains a crossword puzzle with these words.
@@ -21,40 +24,67 @@ The program will accept a list of words into an array list of strings, then make
 For example, when given the list [addle, apple, clowning, incline, plan, burr], the program might display:
 
   a d d l e 
+  
   p
+  
   p
+  
 c l o w n i n g 
+
   e       n
+  
           c
+          
           l
+          
           i
+          
     p l a n e
+    
           e
 
 Below is an example which is not legal because of words touching each other. Note how "prove" is added in a fashion which is illegal since it creates additional words "dr", "do", "lv", and "ee". Similarly, the addition of "no" vertically is illegal since it creates the extra word "no" horizontally. 
 
   a d d l e 
+  
   p r o v e 
+  
   p
+  
 c l o w n i n g 
+
   e       n o
+  
           c 
-          l 
+          
+          l
+          
           i
+          
     p l a n
+    
           e
  
 Here is another example of how a word can be added legally -- the addition of "loon" uses two letters that are in the puzzle already, which creates no problem since there are no new words created other than the single word added "loon".)
 
   a d d l e 
+  
   p     o
+  
   p     o
-c l o w n i n g 
+  
+c l o w n i n g
+
   e       n
-          c 
+  
+          c
+          
           l 
+          
           i
+          
     p l a n
+    
           e
 
 To summarize: A legal placement of a word W has the following properties:
