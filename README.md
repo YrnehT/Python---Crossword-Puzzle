@@ -11,13 +11,10 @@ Arrays store a linear arrangement of values, accessed by a single index. Two-dim
 
 Crosswords are a type of puzzle where the "pieces" of the puzzle have letters in common. For example, these pieces share the letter 'o'.
 
-      d
-      
-a c r o s s
-
-      w 
-      
-      n
+        d
+a c c r o s s
+        w
+        n
 
 The program will accept a list of words into an array list of strings, then make a 20 x 20 matrix of characters (strings of length 1) that contains a crossword puzzle with these words.
 
